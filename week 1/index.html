@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yummy places</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		<h2>My Favorite Food Places in San Jose</h2>
+	</div>
+	<div class="sidebar">
+		<h2>Places</h2>
+        <br>
+        <h3>Tea Lyfe</h3>
+		<body>8018, 989 Story Rd, San Jose, CA 95122</body>
+        </br>
+		<br>
+        <h3>Smitten Ice Cream</h3>
+		<body>3055 Olin Ave #1055, San Jose, CA 95128</body>
+        </br>
+		<br>
+        <h3>New Krungthai Restaurant</h3>
+		<body>580 N Winchester Blvd, San Jose, CA 95128</body>
+        </br>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+
+    <script>
+        var map = L.map('map').setView([37.333166,-121.8575057], 17);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}       ).addTo(map);
+
+                var marker = L.marker([37.333166,-121.8575057]).addTo(map)
+		        var popup = marker.bindPopup('Tea Lyfe<br> Milk Tea')
+				popup.openPopup();
+
+				var marker = L.marker([37.32198134631929, -121.9464718434027]).addTo(map)
+		        var popup = marker.bindPopup('Smitten Ice Cream<br> Ice Cream')
+				popup.openPopup();
+
+				var marker = L.marker([37.3274949,-121.9498338]).addTo(map)
+		        var popup = marker.bindPopup('New Krungthai Restaurant<br> Thai')
+				popup.openPopup();
+
+
+            alert('a selection of my favorite food places in san jose ~yvonne')
+            console.log('hello console!')
+    </script>
+
+</body>
+</html>
