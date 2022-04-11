@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yummy places</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		<h2>A Couple of My Favorite Food Places From My Hometown, San Jose</h2>
+	</div>
+	<div class="sidebar">
+		<h2>Places</h2>
+        <br>
+
+        <h3>Tea Lyfe</h3>
+		<body>8018, 989 Story Rd, San Jose, CA 95122</body>
+        </br>
+		<br>
+
+        <h3>The Breakfast Club</h3>
+		<body>1432 W San Carlos St #80, San Jose, CA 95126</body>
+		</br>
+		<br>
+
+        <h3>Clover Bakery & Cafe</h3>
+		<body>4342 Moorpark Ave, San Jose, CA 95129</body>
+		</br>
+		<br>
+
+		<h3>Pho Kim Long</h3>
+		<body>2082 N Capitol Ave, San Jose, CA 95132</body>
+		</br>
+		<br>
+
+		<h3>Marco Polo Italian Ice Cream</h3>
+		<body>999 Story Rd UNIT 9072, San Jose, CA 95122</body>
+		</br>
+		<br>
+
+		<h3>Voltaire Coffee Roasters</h3>
+		<body>360 S Market St #80, San Jose, CA 95113</body>
+		</br>
+		<br>
+
+		<h3>Sinceretea</h3>
+		<body>392 E Taylor St, San Jose, CA 95112</body>
+		</br>
+		<br>
+
+        </br>
+
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+
+    <script>
+
+	
+	let map = L.map('map').setView([37.333166,-121.8575057], 10);
+
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}       ).addTo(map);
+		
+	
+		let places = [
+
+		 	{'lat': 37.32346482838171, 
+			'lon': -121.91630458780948, 
+			'name': 'The Breakfast Club',
+			'desc': 'A great place for breakfast and brunch. My favorite item here is the Neptune Benedict, which includes shrimp, crab, cream cheese, and avocado. Absolutely heavenly.'
+			},
+
+			{'lat': 37.31606314528711, 
+			'lon': -121.97996977311551, 
+			'name': 'Clover Bakery & Cafe',
+			'desc': 'A family-owned Japanese bakery serving up freshly baked goods. My favorite items from here are the Jalapeño Hot Dog Roll, Spicy Tuna Pan, and the various fruit sandwiches.'
+			},
+
+			{'lat': 37.4074892369412, 
+			'lon': -121.8900656751177, 
+			'name': 'Pho Kim Long Restaurant',
+			'desc': 'Despite the name of the restaurant, I’ve never had phở here before (haha). My favorite dish here is bún riêu ốc, a rice noodle soup with a tomato-based broth that includes fried tofu, fish cakes, and escargot.  It’s my favorite Vietnamese dish and I’ve never had better bún riêu ốc anywhere else.'
+			},
+
+			{'lat': 37.3330396747456, 
+			'lon': -121.8604243573482, 
+			'name': 'Tea Lyfe Drinks',
+			'desc': 'One of my favorite family-owned milk tea spots! They use fresh ingredients (no artificial syrups!) sourced from local farmers markets. They also occasionally host art shows featuring local artists as well. The ambiance there is really nice; one of my favorite spots to just chill and get work done. My favorite drinks there are the Strawberry Oat Matcha, Mango Matcha, and Mango Rose.'
+			},
+
+			{'lat': 37.331146416446494, 
+			'lon': -121.85906731739017, 
+			'name': 'Marco Polo Italian Ice Cream',
+			'desc': 'It’s been so hot these past couple of days; the weather made me reminisce getting ice cream here over the summer. My favorite flavors are guava, black sesame, taro, and strawberry.'
+			},
+
+			{'lat': 37.329667265327224, 
+			'lon': -121.8878888024498, 
+			'name': 'Voltaire Coffee Roasters',
+			'desc': 'Spanish latte and cute latte art. That is all. Also, I once overheard the individuals sitting next to me getting recruited for an MLM, so that made this cafe memorable as well.'
+			},
+
+			{'lat': 37.35301343302399, 
+			'lon': -121.89331930651926, 
+			'name': 'Sinceretea',
+			'desc': 'I am a little biased because I used to work here. This is a family-owned milk tea shop that uses fresh ingredients. My boss would bring fresh fruit puree for the drinks daily. My favorite drink here (sadly it’s a seasonal item) is the Cocopandan, a pandan coconut milk tea. We used fresh pandan leaves and it tastes amazing.',
+			}
+
+		];
+		places.forEach(function(places){
+			let marker = L.marker([places.lat, places.lon])
+			.addTo(map)
+			.bindPopup(places.name + "</br> <br> " + places.desc)
+			.openPopup();
+		})
+
+    </script>
+
+</body>
+</html>
