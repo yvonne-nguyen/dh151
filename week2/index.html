@@ -78,50 +78,57 @@
 		 	{'lat': 37.32346482838171, 
 			'lon': -121.91630458780948, 
 			'name': 'The Breakfast Club',
-			'desc': 'A great place for breakfast and brunch. My favorite item here is the Neptune Benedict, which includes shrimp, crab, cream cheese, and avocado. Absolutely heavenly.'
+			'desc': 'A great place for breakfast and brunch. My favorite item here is the Neptune Benedict, which includes shrimp, crab, cream cheese, and avocado. Absolutely heavenly.',
+			'pic': '<img src="https://s3-media0.fl.yelpcdn.com/bphoto/QyZ3HvgmDmvnzMA9TzPj6A/o.jpg" style= "width:220px";>'
 			},
 
 			{'lat': 37.31606314528711, 
 			'lon': -121.97996977311551, 
 			'name': 'Clover Bakery & Cafe',
-			'desc': 'A family-owned Japanese bakery serving up freshly baked goods. My favorite items from here are the Jalapeño Hot Dog Roll, Spicy Tuna Pan, and the various fruit sandwiches.'
+			'desc': 'A family-owned Japanese bakery serving up freshly baked goods. My favorite items from here are the Jalapeño Hot Dog Roll, Spicy Tuna Pan, and the various fruit sandwiches.',
+			'pic': '<img src="https://s3-media0.fl.yelpcdn.com/bphoto/aYnHtEzlD297vGMILwAK5A/o.jpg" style= "width:220px";>'
 			},
 
 			{'lat': 37.4074892369412, 
 			'lon': -121.8900656751177, 
 			'name': 'Pho Kim Long Restaurant',
-			'desc': 'Despite the name of the restaurant, I’ve never had phở here before (haha). My favorite dish here is bún riêu ốc, a rice noodle soup with a tomato-based broth that includes fried tofu, fish cakes, and escargot.  It’s my favorite Vietnamese dish and I’ve never had better bún riêu ốc anywhere else.'
+			'desc': 'Despite the name of the restaurant, I’ve never had phở here before (haha). My favorite dish here is bún riêu ốc, a rice noodle soup with a tomato-based broth that includes fried tofu, fish cakes, and escargot.  It’s my favorite Vietnamese dish and I’ve never had better bún riêu ốc anywhere else.',
+			'pic': '<img src="https://s3-media0.fl.yelpcdn.com/bphoto/E7LI_VlH8XRkp88Svql9zg/o.jpg" style= "width:220px";>'
 			},
 
 			{'lat': 37.3330396747456, 
 			'lon': -121.8604243573482, 
 			'name': 'Tea Lyfe Drinks',
-			'desc': 'One of my favorite family-owned milk tea spots! They use fresh ingredients (no artificial syrups!) sourced from local farmers markets. They also occasionally host art shows featuring local artists as well. The ambiance there is really nice; one of my favorite spots to just chill and get work done. My favorite drinks there are the Strawberry Oat Matcha, Mango Matcha, and Mango Rose.'
+			'desc': 'One of my favorite family-owned milk tea spots! They use fresh ingredients (no artificial syrups!) sourced from local farmers markets. They also occasionally host art shows featuring local artists as well. The ambiance there is really nice; one of my favorite spots to just chill and get work done. My favorite drinks there are the Strawberry Oat Matcha, Mango Matcha, and Mango Rose.',
+			'pic': '<img src="https://s3-media0.fl.yelpcdn.com/bphoto/z4OlmfAHjcCzn7cCHudLGQ/o.jpg" style= "width:220px";>'
 			},
 
 			{'lat': 37.331146416446494, 
 			'lon': -121.85906731739017, 
 			'name': 'Marco Polo Italian Ice Cream',
-			'desc': 'It’s been so hot these past couple of days; the weather made me reminisce getting ice cream here over the summer. My favorite flavors are guava, black sesame, taro, and strawberry.'
+			'desc': 'It’s been so hot these past couple of days; the weather made me reminisce getting ice cream here over the summer. My favorite flavors are guava, black sesame, taro, and strawberry.',
+			'pic': '<img src="https://s3-media0.fl.yelpcdn.com/bphoto/FL2TPOmWIXak2kFsWNiYyQ/o.jpg" style= "width:220px";>'
 			},
 
 			{'lat': 37.329667265327224, 
 			'lon': -121.8878888024498, 
 			'name': 'Voltaire Coffee Roasters',
-			'desc': 'Spanish latte and cute latte art. That is all. Also, I once overheard the individuals sitting next to me getting recruited for an MLM, so that made this cafe memorable as well.'
+			'desc': 'Spanish latte and cute latte art. That is all. Also, I once overheard the individuals sitting next to me getting recruited for an MLM, so that made this cafe memorable as well.',
+			'pic': '<img src="https://s3-media0.fl.yelpcdn.com/bphoto/35Px4wLWJXUw3soR4BwDaQ/o.jpg" style= "width:220px";>'
 			},
 
 			{'lat': 37.35301343302399, 
 			'lon': -121.89331930651926, 
 			'name': 'Sinceretea',
 			'desc': 'I am a little biased because I used to work here. This is a family-owned milk tea shop that uses fresh ingredients. My boss would bring fresh fruit puree for the drinks daily. My favorite drink here (sadly it’s a seasonal item) is the Cocopandan, a pandan coconut milk tea. We used fresh pandan leaves and it tastes amazing.',
+			'pic': '<img src="https://s3-media0.fl.yelpcdn.com/bphoto/Kzi2232XTc3oSZiGu2SuPw/o.jpg" style= "width:220px";>'
 			}
 
 		];
 		places.forEach(function(places){
 			let marker = L.marker([places.lat, places.lon])
 			.addTo(map)
-			.bindPopup(places.name + "</br> <br> " + places.desc)
+			.bindPopup(places.name + "</br> <br> " + places.desc + "</br> <br> " + places.pic)
 			.openPopup();
 		})
 
