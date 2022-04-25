@@ -11,7 +11,7 @@ body,html {
 body {
 	display: grid;
 	grid-template-rows: 80px 1fr 50px;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 20% 80%;
 	grid-template-areas: 
 	"header header"
 	"sidebar content"
@@ -32,6 +32,19 @@ body {
 	padding:10px;
 	background-color: #555;
 	overflow: auto;
+}
+
+.sidebar-item {
+	color: white;
+	grid-area: sidebar;
+	margin-left: 15%;
+	padding: 8%;
+	display: inline-block;
+    	width: 50%;
+    	border: 1px solid rgb(193, 193, 193);
+	border-radius: 15px;
+	margin-block-end: 12%;
+	text-align: center;
 }
 
 .content {
