@@ -76,4 +76,3 @@ function panTo(index){
 	map.setZoom(14);
 	map.panTo(markers.getLayers()[index]._latlng);
 }
-
