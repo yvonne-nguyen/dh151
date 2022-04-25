@@ -11,7 +11,6 @@ let markers = L.featureGroup();
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
-    readCSV(path);
 });
 
 // create the map
@@ -40,23 +39,12 @@ function readCSV(path){
 
 function mapCSV(data){
 	
-	// circle options
-	let circleOptions = {
-		radius: 5,
-		weight: 1,
-		color: 'white',
-		fillColor: 'dodgerblue',
-		fillOpacity: 1
-	}
-
 	// loop through each entry
-        data.data.forEach(function(item,index){
-        if(typeof item.latitude !== 'undefined' && typeof item.longitude !== 'undefined'){
-            // create marker
-            let marker = L.circleMarker([item.latitude,item.longitude],circleOptions)
-        }
+	data.data.forEach(function(item,index){
+		// create marker
+		let marker = L.marker([item.latitude,item.longitude])
 
-		// add marker to featuregroup		
+		// add marker to featuregroup
 		markers.addLayer(marker)
 	})
 
