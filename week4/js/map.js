@@ -45,7 +45,7 @@ function mapCSV(data){
 		radius: 6,
 		weight: 0.5,
 		color: 'white',
-		fillColor: '#ffffff',
+		fillColor: 'red',
 		fillOpacity: 0.4
 	}
 
