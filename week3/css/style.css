@@ -1,0 +1,41 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+    display: grid;
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 260px 1fr;
+	grid-template-areas: 
+	"header header"
+	"sidebar content";
+}
+
+.header {
+	grid-area: header;
+	padding:30px;
+    background-color: #434343;
+	color: #fff;
+	font-family:monospace;
+    font-size: 20px;
+}
+.sidebar {
+	grid-area: sidebar;
+    overflow-y:scroll;
+	padding:20px;
+    line-height: 35px;
+    background-color: #2d2d2d;
+	color: #fff;
+	font-family: monospace;
+    font-size: 16px;
+    
+}
+.content {
+	grid-area: content;
+}
