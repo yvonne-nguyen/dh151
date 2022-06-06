@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAP CENTER</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- classy brew -->
+	<script src="js/classybrew.js"></script>
+
+	<!-- leaflet side by side-->
+	<script src="data/leaflet-side-by-side.js"></script>
+</head>
+<body>
+
+	<div class="header">
+		<b>PUBLIC DOLLARS & PRIVATE STADIUMS: SAP CENTER</b>
+	</div>
+	<div class="sidebar">
+		<div class="tableauPlaceholder" id="viz1653324023874" style="position: relative; width: 100%; height: 519.75px; overflow: hidden; display: block;"><iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 519.75px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/SAPCenterConstructionFunding/sjcf?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=en-US&amp;:loadOrderID=5&amp;:increment_view_count=no"></iframe></div>
+		
+		<div class="tableauPlaceholder" id="viz1653324529889" style="position: relative; width: 100%; height: 519.75px; overflow: hidden; display: block;"><iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 519.75px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/SAPCenterRevenueExpenditureCosts2018-2019/Sheet1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=en-US&amp;:loadOrderID=7&amp;:increment_view_count=no"></iframe></div>
+	</div>
+	<div class="navigation">
+		<div class="map-item" onclick="mapGeoJSON('sccmfi1990_MFI1990',6,'Oranges','equal_interval');">Median Family Income in 1990</div>
+		<div class="map-item" onclick="mapGeoJSON('sccmfi2020_MFI2020',6,'Oranges','equal_interval');">Median Family Income in 2020</div>
+		<div class="map-item" onclick="mapGeoJSON('sccmhv1990_MHV1990',6,'Blues','equal_interval');">Median House Value in 1990</div>
+		<div class="map-item" onclick="mapGeoJSON('sccmhv2020_MHV2020',6,'Blues','equal_interval');">Median House Value in 2020</div>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<script src="js/map.js"></script>
+
+</body>
+</html>
