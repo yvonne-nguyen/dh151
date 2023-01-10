@@ -1,0 +1,230 @@
+body {
+    background-color: rgb(255, 255, 255);
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    margin: 50px 0px 20px 2%;
+    font-family: 'DM Serif Display', serif;
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+    font-family: 'DM Serif Display', serif;
+  }
+  p {
+    color: rgb(0, 0, 0);
+    margin: 0px 0px 0px 2%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  ol {
+    color: rgb(0, 0, 0);
+    margin: 0px 0px 0px 2%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 40px;
+    display: flex;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 65%;
+    height: 65%;
+    margin: auto;
+    flex: 1;
+    margin: 10px;
+  }
+
+  .image-description {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius: 20px;
+  }
+  .my-button1 {
+    padding: relative;
+    height: 25px;
+    width: 85px;
+    margin: 2%;
+    background-color: #D8C8DB;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button2 {
+    padding: relative;
+    height: 25px;
+    width: 85px;
+    margin: 2%;
+    background-color: #EBD2D2;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button3 {
+    padding: relative;
+    height: 25px;
+    width: 110px;
+    margin: 2%;
+    background-color:#FAE5D1;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button4 {
+    padding: relative;
+    height: 25px;
+    width: 60px;
+    margin: 2%;
+    background-color:#C196A9;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button5 {
+    padding: relative;
+    height: 25px;
+    width: 50px;
+    margin: 2%;
+    background-color:#E5B49F;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button6 {
+    padding: relative;
+    height: 25px;
+    width: 90px;
+    margin: 2%;
+    background-color:#FADFC6;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button7 {
+    padding: relative;
+    height: 25px;
+    width: 105px;
+    margin: 2%;
+    background-color: #DDAAA0;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button8 {
+    padding: relative;
+    height: 25px;
+    width: 130px;
+    margin: 2%;
+    background-color: #ECD9CA;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button9 {
+    padding: relative;
+    height: 25px;
+    width: 100px;
+    margin: 2%;
+    background-color: #C196A9;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .my-button10 {
+    padding: relative;
+    height: 25px;
+    width: 120px;
+    margin: 2%;
+    background-color: #F5C79D;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(64, 64, 64);
+    border-radius: 10px;
+  }
+
+  .grid {
+    width: 100%;
+    margin-left: 1%;
+  }
+  
+  .grid-item {
+    float: left;
+    width: 50%;
+  }
+  
+  .text-column {
+    background-color: transparent;
+  }
+  
+  .image-column {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .nav li {
+    float: left;
+    width: 25%;
+  }
+  
+  .nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-left: 2%;
+  }
+  
+  .nav a:hover {
+    color: #D8C8DB;
+  }
+
+  .back-arrow:before {
+    content: "⬅";
+    margin-right: 10px;
+  }
+  
+  
